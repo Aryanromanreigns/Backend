@@ -15,12 +15,12 @@ app.use(function(req,res,next){
 
 
 app.get('/',function(req,res){
-    app.send("hello world")
+    req.send("hello world")
 });
 
 
 app.get('/profile',function(req,res){
-    app.send('profle section')
+    req.send('profle section')
 });
 
 app.get('/about',function(req,res,err){
